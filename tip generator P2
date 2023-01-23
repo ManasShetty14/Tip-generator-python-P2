@@ -1,0 +1,7 @@
+bill=float(input("Enter the total bill: $"))
+tip=int(input("Select the tip to be entered between 10,12,15:"))
+people=int(input("Enter the total number of people:"))
+totalamt=(bill/people)*(1+(tip/100))
+final=round(totalamt,2)
+final="{:.2f}".format(totalamt)    #format
+print(f"Each person should pay: ${final}")    
